@@ -1,6 +1,6 @@
 
 
-
+//Calculates tenant score from user input and updates tenantScoreLabel//
 document.getElementById("calculate").onclick = function calculate() {
 
 var propertyLocation = document.getElementById("propertyLocation").value;
@@ -10,6 +10,7 @@ var propertyInterior = document.getElementById("propertyInterior").value;
 var tenantScore = ((Number(propertyLocation))*.4)+((Number(propertyExterior))*.2)+((Number(propertyInterior))*.4);
 
 document.getElementById("tenantScoreLabel").innerHTML = Math.round(tenantScore * 100)/100;
+
 return false;
 }
 

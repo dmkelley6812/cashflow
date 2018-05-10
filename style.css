@@ -1,8 +1,37 @@
 * {
 	font-family: 'Raleway', sans-serif;
+	font-size: 1rem;
 }
 
+#locationHelp, #interiorHelp, #exteriorHelp {
+	font-size:.9rem;
+}
 
 input {
 	width: 50%;
+}
+
+.titles {
+	font-size: 1.2rem;
+}
+
+#tenantScoreLabel {
+	padding-bottom: 25vw;
+}
+
+.scale {
+	display: inline-flex;
+	justify-content: space-between;
+	padding-bottom: 5vw;
+	padding-top: 1vw;
+	font-size: 1rem;
+}
+
+.row {
+	justify-content: center;
+}
+
+
+label {
+	padding-bottom: 2vw;
 }
