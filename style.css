@@ -1,37 +1,41 @@
-* {
+
+html, body {
+	height: 100%;
+
+}
+
+	*{
 	font-family: 'Raleway', sans-serif;
-	font-size: 1rem;
+	/*font-size: 1.2vw; */
+} 
+
+
+ .scale {
+	display: inline-flex;
+	justify-content: space-between;
+	padding-left: 0px;
+	padding-right: 0px;
+	font-size: 14px;
+} 
+
+.row {
+	height: 20%;
 }
 
-#locationHelp, #interiorHelp, #exteriorHelp {
-	font-size:.9rem;
-}
-
-input {
-	width: 50%;
+.calculate, .submit {
+	height: 10%;
 }
 
 .titles {
-	font-size: 1.2rem;
+	
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
-
-#tenantScoreLabel {
-	padding-bottom: 25vw;
-}
-
-.scale {
-	display: inline-flex;
+/*.masterGrid {
+	
+	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
-	padding-bottom: 5vw;
-	padding-top: 1vw;
-	font-size: 1rem;
-}
-
-.row {
-	justify-content: center;
-}
-
-
-label {
-	padding-bottom: 2vw;
-}
+	align-content: center;
+	flex-wrap: nowrap;
+}*/

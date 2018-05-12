@@ -17,9 +17,9 @@ return false;
 
 document.getElementById("clear").onclick= function clear(){
 
-document.getElementById("propertyLocation").value = 1;
-document.getElementById("propertyInterior").value = 1;
-document.getElementById("propertyExterior").value = 1;
+document.getElementById("propertyLocation").value = 3;
+document.getElementById("propertyInterior").value = 3;
+document.getElementById("propertyExterior").value = 3;
 document.getElementById("tenantScoreLabel").innerHTML = "";
 return false;
 }

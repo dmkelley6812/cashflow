@@ -2,20 +2,23 @@
 <html>
 <head>
 	<title>Cash Flow Calcs</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 </head>
 <body>
 
-<div class="container text-center">
-  <div class="row">
-    <div class=" col-lg-6 col-sm-12 text-center">
+
+<div class="container-fluid masterGrid h-100 ">
+  <div class="row h-20 justify-content-center">
+    <div class="col-lg-4 col-sm-10 text-center">
       <label for="propertyLocation" class="titles">Property Location</label>
       <input type="range" class="custom-range" min="1" max="5" step="0.5" id="propertyLocation">
-      <div class="container scale">
+      <div class="container-fluid scale text-muted">
         <label>1</label>
         <label>•</label>
         <label>2</label>
@@ -28,14 +31,13 @@
       </div>
     </div>
   </div>
-</div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6 col-sm-12 text-center">
+
+  <div class="row justify-content-center h-20">
+    <div class="col-lg-4 col-sm-10 text-center">
       <label for="propertyExterior" class="titles">Property Exterior</label>
       <input type="range" class="custom-range" min="1" max="5" step="0.5" id="propertyExterior">
-      <div class="container scale">
+      <div class="container-fluid scale text-muted">
         <label>1</label>
         <label>•</label>
         <label>2</label>
@@ -48,14 +50,13 @@
       </div>
     </div>
   </div>
-</div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6 col-sm-12 text-center">
+
+  <div class="row h-20 justify-content-center">
+    <div class="col-lg-4 col-sm-10 text-center">
       <label for="propertyInterior" class="titles">Property Interior</label>
       <input type="range" class="custom-range" min="1" max="5" step="0.5" id="propertyInterior">
-      <div class="container scale">
+      <div class="container-fluid scale text-muted">
         <label>1</label>
         <label>•</label>
         <label>2</label>
@@ -68,83 +69,24 @@
       </div>
     </div>
   </div>
-</div>
-<!-- <div class="container col-lg-6 text-center p-5 location">
-	<form class="text-center">
-	<div class="form-group text-center">
-    <label for="propertyLocation">Property Location</label>
-    <select class="form-control form-control-lg" id="propertyLocation">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-    <small id="locationHelp" class="form-text text-muted">
-  	Location is rated from 1-5 with 1 being a very undesirable location and 5 being a very desireable location.
-	</small>
-  
+
+  <div class="container text-center calculate pt-5 pb-2">
+    <button class="btn btn-primary text-center" id="calculate">Calculate my Tenant Score!</button>
   </div>
-</form>
-</div>
-<div class="container col-lg-6 text-center p-5">
-	<form class="text-center">
-	<div class="form-group col text-center">
-    <label for="propertyInterior">Property Interior</label>
-    <select class="form-control" id="propertyInterior">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-    <small id="interiorHelp" class="form-text text-muted">
-  	Interior finish, quality, and feel is measured relative to surrounding properties. 1 is a very poor interior and 5 is a very nice interior.
-	</small>
-  
+  <div class="container text-center submit h-10 pt-3">
+    <button class="btn btn-primary text-center" id="clear">Reset</button>
   </div>
-</form>
+ 
+		
+    
+    
+      <div class="col-12 text-center score h-10">
+        <h3>Your property's tenant score is:</h3>
+        <h2 id="tenantScoreLabel" class=" font-weight-bold"> 3.0</h2>
+      </div>
 </div>
-<div class="container col-lg-6 text-center p-5">
-	<form class="text-center">
-	<div class="form-group col text-center">
-    <label for="propertyExterior">Property Exterior</label>
-    <select class="form-control" id="propertyExterior">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-    <small id="exteriorHelp" class="form-text text-muted">
-  	Exterior condition is measured relative to surrounding properties. 1 is a very poor exterior and 5 is a very nice exterior.
-	</small>
-   </div>
- </form>
-</div> -->
-<div class="container text-center p-5">
-<button class="btn btn-primary text-center" id="calculate">Calculate my Tenant Score!</button>
-</div>
-<div class="container text-center">
-<button class="btn btn-primary text-center" id="clear">Reset</button>
-</div>
-</form>
-		</div>
-		<div class="col-12 text-center pt-5">
-			<h1>Your property's tenant score is:</h1>
-			<h1 id="tenantScoreLabel"> 3.0</h1>
-		</div>
-	</div>
-</div>
-
-
-
-
-
-
-
-
-
+		  
+	 
 
 
 
